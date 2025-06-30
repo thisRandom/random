@@ -1,0 +1,77 @@
+html {
+  width: 100%; /* 确保 html 占满视口 */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%; /* 占满 html 的宽度 */
+  margin: 0;   /* 清除默认边距 */
+  padding: 0;  /* 清除默认内边距 */
+  overflow-x: hidden; /* 防止横向溢出 */
+}
+
+/* 全局样式 */ 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    backdrop-filter: blur(10px);         /* 高斯模糊 */
+    z-index: 100;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 底部阴影 */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: lift; /* 左对齐 */
+    gap: 30px;
+}
+
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #0065fc;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* 下划线完全展开 */
+}
+
+
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f4;
+}
