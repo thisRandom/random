@@ -19,6 +19,25 @@ body {
     padding: 0;
 }
 
+main {
+    text-indent: 2em; /* 缩进2个字符宽度 */
+}
+
+/* 核心样式 */
+.content-container {
+    max-width: 800px; /* 控制内容区最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 0 20px; /* 移动端左右内边距，防止内容紧贴屏幕边缘 */
+}
+
+/* 可选：优化文字段落样式 */
+.content-container p {
+    font-size: 1.1rem; /* 适当的字体大小 */
+    line-height: 1.8; /* 舒适的行高 */
+    margin-bottom: 1.5rem; /* 段落间距 */
+    text-align: justify; /* 两端对齐，使文本更整齐 */
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -38,6 +57,11 @@ nav ul {
     display: flex;
     justify-content: lift; /* 左对齐 */
     gap: 30px;
+}
+
+.title-primary {
+  color: #165DFF;
+  font-family: 'Inter', sans-serif;
 }
 
 
