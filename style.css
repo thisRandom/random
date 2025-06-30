@@ -55,8 +55,19 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: lift; /* 左对齐 */
-    gap: 30px;
+    justify-content: Center; /* 居中对齐 */
+    gap: 25px;
+}
+
+/* 背景设置 */
+main {
+    background-color: #f4f2ec; /* 浅灰色背景 */
+    padding: 40px 0; /* 上下内边距 */
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .title-primary {
